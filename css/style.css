@@ -1,0 +1,226 @@
+:root {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  padding-block: 6.25rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+i {
+  display: inline-block;
+}
+
+/* Start Spinner Part */
+.lds-facebook {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  background: #e78285;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  margin-right: 5px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  margin-right: 5px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+/* Start Nav Section */
+nav {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  z-index: 999999;
+  color: white;
+  min-width: 25vw;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-section {
+  padding: 20px;
+  background-color: #111111;
+}
+
+.nav-section a {
+  display: block;
+  text-align: center;
+  padding-block: 0.9375rem;
+  padding-inline: 1.5625rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-section a:hover {
+  color: rgba(214, 46, 51, 0.4);
+}
+
+.nav-section i {
+  width: 100%;
+  padding-block: 0.9375rem;
+  display: block;
+  text-align: end;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-section i:hover::before {
+  color: rgba(214, 46, 51, 0.4);
+}
+
+.open-btn {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.875rem;
+  border-end-end-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Start Header Section */
+header {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(214, 46, 51, 0.6),
+      rgba(214, 46, 51, 0.6)
+    ),
+    url(../images/events-heavenly-header.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 500 !important;
+}
+
+/* Start Singers Section */
+.singers .item {
+  max-width: 33.75rem;
+  margin-inline: auto;
+}
+.singers h3 {
+  background-color: #e68285;
+  margin-bottom: 0;
+  color: #fff;
+  padding: 0.625rem;
+  cursor: pointer;
+}
+
+.singers p {
+  background-color: #cccccc;
+  margin-bottom: 0;
+  color: #000;
+  padding: 0.625rem;
+}
+
+/* Start CountDown Section */
+.countDown {
+  background-image: linear-gradient(
+      rgba(214, 46, 51, 0.6),
+      rgba(214, 46, 51, 0.6)
+    ),
+    url(../images/invitation-2508607__340.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.countDown .item {
+  height: 100%;
+  border: 2px solid white;
+}
+
+.countDown .item p {
+  margin-bottom: 0;
+  padding: 42px;
+  font-size: 1.875rem;
+  color: white;
+  font-weight: 500;
+}
+
+.countDown .time-out {
+  padding-block: 2.5rem;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.875rem;
+}
+
+/* Start ContactUs Section */
+.contactUs h5 {
+  font-weight: 900;
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.contactUs .socialLinks i {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactUs .socialLinks i:hover {
+  background-color: #d62e33;
+  color: white;
+}
+
+.contactUs textarea {
+  max-height: 250px;
+  min-height: 150px;
+}
